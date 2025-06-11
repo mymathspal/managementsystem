@@ -1,8 +1,16 @@
 {
-    "name": "PHP & Apache",
-    "image": "mcr.microsoft.com/vscode/devcontainers/php:8.1-apache",
-    "forwardPorts": [
-        80
-    ],
-    "postCreateCommand": "echo 'Dev container ready!'"
+    "name": "PHP + MySQL App",
+    "dockerComposeFile": "docker-compose.yml",
+    "service": "php",
+    "workspaceFolder": "/workspace",
+    "forwardPorts": [80],
+    "customizations": {
+        "vscode": {
+            "extensions": [
+                "bmewburn.vscode-intelephense-client",
+                "xdebug.php-debug"
+            ]
+        }
+    }
+
 }
