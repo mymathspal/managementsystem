@@ -1,0 +1,8 @@
+{
+    "name": "PHP & Apache",
+    "image": "mcr.microsoft.com/vscode/devcontainers/php:8.1-apache",
+    "forwardPorts": [
+        80
+    ],
+    "postCreateCommand": "echo 'Dev container ready!'"
+}
