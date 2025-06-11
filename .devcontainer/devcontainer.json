@@ -1,10 +1,12 @@
+// 
+
 {
     "name": "PHP + MySQL App",
     "dockerComposeFile": "docker-compose.yml",
-    "service": "php",
-    "workspaceFolder": "/workspace",
-    "forwardPorts": [80],
-    "customizations": {
+    "service": "php",  //this is the container where VS code will run
+    "workspaceFolder": "/workspace", 
+    "forwardPorts": [80], //so you can access the app in your browser
+    "customizations": { 
         "vscode": {
             "extensions": [
                 "bmewburn.vscode-intelephense-client",
